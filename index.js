@@ -80,8 +80,8 @@ MyForm = {
             if (callback) callback(data);
          }
       };
-      httpRequest.open('GET', path);
-      httpRequest.send();
+      httpRequest.open('POST', path);
+      httpRequest.send(JSON.stringify(MyForm.getData()));
    },
    _response: function (data) {
       var resultContainer = document.getElementById('resultContainer');
