@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Тестовое задание</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form id="myForm" name="myForm" class="test__form" action="success.json" onsubmit="return false;">
+            <label for="fio">ФИО</label><input name="fio" id="fio" class="test__input" required onchange="MyForm._changedInput(this)">
+            <label for="email">Email</label><input type="email" name="email" id="email" class="test__input" required onchange="MyForm._changedInput(this)">
+            <label for="phone">Телефон</label><input name="phone" id="phone" class="test__input" required onchange="MyForm._changedInput(this)">
+            <input type="submit" id="submitButton" onclick="MyForm.submit()">
+    </form>
+    <div id="resultContainer">
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
