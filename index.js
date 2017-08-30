@@ -104,5 +104,6 @@ MyForm = {
             resultContainer.textContent = '';
             break;
       }
+      MyForm._setDisableBtn(false);
    }
 };
